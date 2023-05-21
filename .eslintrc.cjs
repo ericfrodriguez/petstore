@@ -8,7 +8,7 @@ module.exports = {
 	'overrides': [
 	],
 	'parserOptions': {
-		'ecmaVersion': 2018,
+		'ecmaVersion': 2021,
 		'sourceType': 'module'
 	},
 	'rules': {
@@ -21,12 +21,15 @@ module.exports = {
 			'unix'
 		],
 		'quotes': [
-			'error',
-			'single'
+			'warn',
+			'single',
 		],
 		'semi': [
 			'error',
 			'always'
-		]
+		],
+		'no-unused-vars': [
+			'warn', { 'vars': 'local' }
+		],
 	}
 };

@@ -1,23 +1,35 @@
 {
-  "name": "y",
+  "name": "eric-rodriguez-developer",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "start": "node index.js",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "test": "NODE_ENV=test mocha --timeout=5000",
+    "initdb": "node ./src/seeds/initPets.js"
   },
   "author": "Eric Rodriguez <feric.rodriguez@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@faker-js/faker": "^8.0.1",
+    "chai": "^4.3.7",
     "eslint": "^8.40.0",
+    "mocha": "^10.2.0",
     "nodemon": "^2.0.22",
-    "prettier": "2.8.8"
+    "prettier": "2.8.8",
+    "supertest": "^6.3.3"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "morgan": "^1.10.0",
     "mysql2": "^3.3.1",
-    "sequelize": "^6.31.1"
+    "sequelize": "^6.31.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3"
   }
 }
