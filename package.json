@@ -8,17 +8,22 @@
     "lint": "eslint . --fix",
     "start": "node index.js",
     "dev": "NODE_ENV=development nodemon index.js",
-    "test": "NODE_ENV=test mocha --timeout=5000",
-    "initdb": "node ./src/seeds/initPets.js"
+    "test": "NODE_ENV=test mocha --recursive ./test --timeout=8000",
+    "coverage": "NODE_ENV=test nyc npm run test",
+    "initdb": "node ./src/seeds/initPets.js",
+    "docs": "apidoc -i ./src/docs/api -o ./public/api",
+    "docs:edit": "apidoc -i ./src/docs/api -o ./public/api --watch"
   },
   "author": "Eric Rodriguez <feric.rodriguez@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@faker-js/faker": "^8.0.1",
+    "apidoc": "^1.0.2",
     "chai": "^4.3.7",
     "eslint": "^8.40.0",
     "mocha": "^10.2.0",
     "nodemon": "^2.0.22",
+    "nyc": "^15.1.0",
     "prettier": "2.8.8",
     "supertest": "^6.3.3"
   },

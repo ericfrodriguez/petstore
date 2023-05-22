@@ -1,0 +1,18 @@
+{
+    "extension": [".js", ".cjs", ".mjs", ".ts", ".tsx", ".jsx"],
+    "exclude": [
+        "reports",
+        "test",
+        "**/docs/**/*.js",
+        "public"
+    ],
+    "include": [
+        "src/**/*.js"
+      ],
+    "reporter": [
+        "html",
+        "text"
+    ],
+    "all": true,
+    "report-dir": "./public/reports"
+}

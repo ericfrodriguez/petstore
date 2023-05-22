@@ -1,0 +1,6 @@
+{
+    "name": "Swagger Petstore",
+    "title": "API Documentation",
+    "version": "1.0.0",
+    "description": "Documentation for the REST API access provided at Swagger Pet Store"
+}
