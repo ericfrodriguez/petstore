@@ -110,7 +110,7 @@ It is possible to generate a test coverage report with the following command
 npm run coverage
 ```
 
-It will display a report at the end of the test execution and will generate a static site with the report which can be accessed by clicking on the following path `[](http://localhost:3000/reports)` or the port you set in the environment variables.
+It will display a report at the end of the test execution and will generate a static site with the report which can be accessed by clicking on the following path `http://localhost:3000/reports` or the port you set in the environment variables.
 
 ## Load example data
 
